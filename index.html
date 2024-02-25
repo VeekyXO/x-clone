@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <img src="./logo-black.png" alt="X-logo" id="logox">
+
+   <h1>Happening now</h1>
+  <h2 class="join-txt">Join today.</h2>
+  <div class="buttons">
+  <button><img src="./google.png" alt="">Signup with google</button><br>
+  <button><img src="./apple.png" alt="">Signup with apple</button>
+  <hr>
+  <span>or</span>
+  <button class="CA" onclick="openCreateAccountModal()">Create Account</button>
+  <p class="caution">By signing up, you agree to the <a href="">Terms of Service and Privacy
+     Policy</a>, including <a href="">Cookie Use.</a></p>
+  <h2 id = "acc">Already have an account?</h2>
+  <button class="sign-in">Sign in</button>
+</div>
+<div class ="footer">
+  <footer><a href="">About</a><a href="">Download the X app</a> <a href="">
+    Help Center</a> <a href="">Terms of Service</a><a href="">Privacy Policy</a><a href="">
+      Cookie Policy</a> <a href="">Accessibility</a> <a href="">Ads info</a> <a href="">
+        Blog</a><a href="">Status</a><a href=""> Careers</a> <a href="">Brand Resources</a><a href="">Advertising</a><a href="">Marketing</a>
+        <a href="">X for Business</a><a href=""> Developers</a><a href="">Directory</a><br>
+        <p><a href="" style="align-items: center;">Settings</a> © 2024 X Corp.</p></footer>
+</div>
+<div id="createAccountModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCreateAccountModal()">&times;</span>
+    <img src="./logo-black.png" alt="logo-ca" class="ca-logo">
+    <h2 class = "ca-title">Create your Account</h2>
+    <form>
+      <label for="name"></label>
+      <input type="text" id="name" name="name" required placeholder="Name">
+      <label for="email"></label>
+      <input type="email" id="email" name="email" required placeholder="Phone">
+      <a href="" class="email-ca">Use email instead</a>
+      <p class="dob">Date of birth</p>
+      <p class="age">This will not be shown publicly. Confirm your own age, even if this <br>
+         account is for a business, a pet, or something else.</p>
+         <div class="date-input">
+          <input type="number" id="day" name="day" min="1" max="31" required placeholder="Day">
+      </div>
+
+      <div class="date-input">
+          <select id="month" name="month" required>
+              <option value="" disabled selected>Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+          </select>
+    
+      </div>
+
+      <div class="date-input">
+          <label for="year"></label>
+          <input type="number" id="year" name="year" min="1900" max="2024" required placeholder="Year" class="year" >
+      </div>
+      <button class="next">Next</button>
+
+    </form>
+  
+  </div>
+</div>
+</body>
+</html>
