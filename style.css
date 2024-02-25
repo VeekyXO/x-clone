@@ -254,13 +254,13 @@ hr{
 #createAccountModal form input:focus::placeholder,
 #createAccountModal form input:not(:placeholder-shown)::placeholder {
     font-size: 12px;
-    transform: translateY(-10px); /* Move placeholder up on focus or when input is not empty */
+    transform: translateY(-10px);
     color: #1179b9;
 }
 #createAccountModal form input:focus {
     outline: none;
     border-width: 2px;
-    border-color: #0a6dab; /* Change border color to blue on focus */
+    border-color: #0a6dab; 
 }
 
 .ca-logo{
